@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0d18">
+
+  <title>Barbearia Imperial | Cortes e barba em Botafogo</title>
+
+  <meta
+    name="description"
+    content="Conheça o protótipo da Barbearia Imperial: uma landing page para apresentar serviços, trabalhos e facilitar agendamentos pelo WhatsApp."
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Barbearia Imperial | Cortes e barba">
+  <meta
+    property="og:description"
+    content="Uma experiência pensada para quem valoriza estilo, cuidado e atendimento."
+  >
+  <meta property="og:image" content="img/og.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Barbearia Imperial, início">
+        <span class="logo-mark" aria-hidden="true">BI</span>
+
+        <span class="logo-text">
+          Barbearia <strong>Imperial</strong>
+        </span>
+      </a>
+
+      <nav id="nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#local">Localização</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <!-- Substitua o número de exemplo em todos os links de WhatsApp -->
+      <a
+        class="btn btn-gold header-cta"
+        href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Agendar horário
+      </a>
+
+      <button
+        id="menuBtn"
+        class="menu-btn"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO: primeira seção depois do cabeçalho -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="eyebrow">Botafogo · Rio de Janeiro</p>
+
+          <h1 id="hero-title">
+            Seu estilo merece
+            <span>tratamento imperial.</span>
+          </h1>
+
+          <p class="hero-sub">
+            Cortes clássicos e modernos, cuidado com a barba e uma
+            experiência feita para você sair da cadeira na sua melhor versão.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="btn btn-gold btn-lg"
+              href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Agendar pelo WhatsApp
+            </a>
+
+            <a class="btn btn-ghost btn-lg" href="#servicos">
+              Conhecer os serviços
+            </a>
+          </div>
+
+          <ul class="hero-badges" aria-label="Destaques">
+            <li>✦ Cortes personalizados</li>
+            <li>✦ Cuidado com a barba</li>
+            <li>✦ Agendamento fácil</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section" aria-labelledby="servicos-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Nossos serviços</p>
+
+          <h2 id="servicos-title">
+            Seu estilo em boas mãos.
+          </h2>
+
+          <p class="section-intro">
+            Do corte à finalização da barba, cada detalhe importa.
+          </p>
+        </div>
+
+        <div class="grid grid-3 services">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>Corte Imperial</h3>
+            <p>Corte com máquina e tesoura, finalização e styling.</p>
+            <span class="price">R$ 55</span>
+          </article>
+
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>Barba na Navalha</h3>
+            <p>Alinhamento da barba com atenção aos detalhes.</p>
+            <span class="price">R$ 45</span>
+          </article>
+
+          <article class="card highlight">
+            <span class="tag">Experiência completa</span>
+            <span class="card-number">03</span>
+            <h3>Combo Corte + Barba</h3>
+            <p>O cuidado completo para renovar seu visual.</p>
+            <span class="price">R$ 89</span>
+          </article>
+
+          <article class="card">
+            <span class="card-number">04</span>
+            <h3>Degradê / Fade</h3>
+            <p>Transições limpas para um visual moderno.</p>
+            <span class="price">R$ 60</span>
+          </article>
+
+          <article class="card">
+            <span class="card-number">05</span>
+            <h3>Pezinho e Acabamento</h3>
+            <p>Manutenção para deixar o corte alinhado.</p>
+            <span class="price">R$ 25</span>
+          </article>
+
+          <article class="card">
+            <span class="card-number">06</span>
+            <h3>Corte Infantil</h3>
+            <p>Um corte pensado para os pequenos.</p>
+            <span class="price">R$ 45</span>
+          </article>
+        </div>
+
+        <p class="demo-note">
+          * Valores ilustrativos para apresentação do protótipo.
+        </p>
+
+        <div class="center">
+          <a
+            class="btn btn-gold"
+            href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20conhecer%20os%20horários%20disponíveis."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Consultar horários
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="section section-alt" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Galeria</p>
+
+          <h2 id="galeria-title">
+            Estilo em cada detalhe.
+          </h2>
+
+          <p class="section-intro">
+            Um espaço para apresentar os cortes, os acabamentos e o ambiente
+            da barbearia.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure>
+            <img
+              src="img/corte-1.png"
+              width="600"
+              height="600"
+              alt="Exemplo de corte masculino"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="img/corte-2.png"
+              width="600"
+              height="600"
+              alt="Exemplo de barba alinhada"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="img/corte-3.png"
+              width="600"
+              height="600"
+              alt="Exemplo de corte masculino clássico"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="img/corte-4.png"
+              width="600"
+              height="600"
+              alt="Exemplo de corte degradê"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="img/corte-5.png"
+              width="600"
+              height="600"
+              alt="Exemplo de corte masculino finalizado"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="img/corte-6.png"
+              width="600"
+              height="600"
+              alt="Exemplo de ambiente de barbearia"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section
+      id="diferenciais"
+      class="section"
+      aria-labelledby="diferenciais-title"
+    >
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">A experiência</p>
+
+          <h2 id="diferenciais-title">
+            Mais que um corte.
+          </h2>
+
+          <p class="section-intro">
+            Uma apresentação dos detalhes que podem tornar a experiência
+            dos seus clientes especial.
+          </p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">✂</div>
+            <h3>Estilo pessoal</h3>
+            <p>Um visual escolhido para combinar com cada cliente.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">◷</div>
+            <h3>Agendamento fácil</h3>
+            <p>Contato direto pelo WhatsApp para combinar o horário.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">♛</div>
+            <h3>Atenção aos detalhes</h3>
+            <p>Cuidado em cada etapa, do atendimento à finalização.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">☕</div>
+            <h3>Ambiente acolhedor</h3>
+            <p>Um espaço pensado para aproveitar o momento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA AÇÃO -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <p class="eyebrow">Seu próximo corte começa aqui</p>
+            <h2 id="cta-title">Pronto para renovar o visual?</h2>
+            <p>Entre em contato e consulte os horários disponíveis.</p>
+          </div>
+
+          <a
+            class="btn btn-gold btn-lg"
+            href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20consultar%20os%20horários%20disponíveis."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Falar pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="local" class="section section-alt" aria-labelledby="local-title">
+      <div class="container local-grid">
+        <div>
+          <p class="eyebrow">Onde estamos</p>
+
+          <h2 id="local-title">
+            Encontre a Imperial.
+          </h2>
+
+          <p class="section-intro">
+            Uma seção para mostrar onde seus clientes podem encontrar você.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <strong>Localização de exemplo</strong>
+              Botafogo, Rio de Janeiro — RJ
+            </li>
+
+            <li>
+              <strong>Horário de exemplo</strong>
+              Segunda a sexta: 9h às 20h<br>
+              Sábado: 9h às 18h
+            </li>
+
+            <li>
+              <strong>Agendamento</strong>
+              Consulte a disponibilidade pelo WhatsApp.
+            </li>
+          </ul>
+
+          <div class="hero-actions">
+            <a
+              class="btn btn-gold"
+              href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20mais%20informações."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Entrar em contato
+            </a>
+
+            <a
+              class="btn btn-ghost"
+              href="https://www.google.com/maps/search/?api=1&query=Botafogo%2C+Rio+de+Janeiro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver região no mapa
+            </a>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Mapa ilustrativo da região de Botafogo, Rio de Janeiro"
+            src="https://maps.google.com/maps?q=Botafogo%2C%20Rio%20de%20Janeiro&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Dúvidas frequentes</p>
+
+          <h2 id="faq-title">
+            Antes de agendar.
+          </h2>
+
+          <p class="section-intro">
+            Exemplos de perguntas que podem ser adaptadas para cada barbearia.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq">
+            <summary>
+              Como posso agendar um horário?
+              <span aria-hidden="true">+</span>
+            </summary>
+
+            <p>
+              Basta clicar em um dos botões de WhatsApp e consultar
+              os horários disponíveis.
+            </p>
+          </details>
+
+          <details class="faq">
+            <summary>
+              Quais serviços estão disponíveis?
+              <span aria-hidden="true">+</span>
+            </summary>
+
+            <p>
+              Você pode consultar os serviços apresentados nesta página
+              ou pedir mais informações pelo WhatsApp.
+            </p>
+          </details>
+
+          <details class="faq">
+            <summary>
+              Como saber o valor atualizado?
+              <span aria-hidden="true">+</span>
+            </summary>
+
+            <p>
+              Os valores desta página são ilustrativos. Em uma versão
+              para um negócio real, eles devem ser substituídos pelos
+              preços praticados.
+            </p>
+          </details>
+
+          <details class="faq">
+            <summary>
+              Posso tirar dúvidas antes de agendar?
+              <span aria-hidden="true">+</span>
+            </summary>
+
+            <p>
+              Sim. Entre em contato pelo WhatsApp para conversar
+              e esclarecer suas dúvidas.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="logo" aria-label="Voltar ao início">
+          <span class="logo-mark" aria-hidden="true">BI</span>
+
+          <span class="logo-text">
+            Barbearia <strong>Imperial</strong>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          Um protótipo de landing page para barbearias, criado para
+          apresentar serviços e facilitar o contato com clientes.
+        </p>
+      </div>
+
+      <nav aria-label="Navegação do rodapé">
+        <h3>Navegação</h3>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#faq">Dúvidas frequentes</a>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Contato</h3>
+
+        <a
+          href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20mais%20informações."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+        <a href="#local">Localização</a>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <p>
+        © <span id="year"></span> Barbearia Imperial.
+        Protótipo demonstrativo.
+      </p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a
+    class="whats-float"
+    href="https://wa.me/5521999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Entrar em contato pelo WhatsApp"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      width="28"
+      height="28"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7 1 3.7 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.4zM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 2.2 12C2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 7 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.9 9.8zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.1-.2.2-.4.2-.6.1-1.4-.7-2.5-1.6-3.3-3-.2-.3 0-.5.1-.7l.5-.6c.1-.2.2-.3.1-.5-.1-.2-.7-1.7-.9-2.3-.2-.5-.4-.5-.6-.5h-.6c-.2 0-.6.1-.9.4-1 1-1.2 2.2-.8 3.5.5 1.4 1.4 2.7 2.5 3.8 1.4 1.4 3 2.3 4.9 2.6 1.1.2 2.1 0 2.9-.7.4-.4.7-.9.7-1.5 0-.2 0-.3-.3-.4z"></path>
+    </svg>
+  </a>
+</body>
+</html>
